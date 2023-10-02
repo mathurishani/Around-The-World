@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Around The World</title>
+  </head>
+  <body>
+    <div class="outer-bg">
+      <!-- Navbar -->
+      <nav>
+        <a href=""><img src="images/logo4.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="1-Home.html">HOME</a></li>
+            <li><a href="2-About.html">ABOUT</a></li>
+            <li><a href="3-Plans.html">PLANS</a></li>
+            <li><a href="4-Contact.html">CONTACT</a></li>
+            <li><a href="5-Register.html">REGISTER/LOGIN</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <!-- End of Navbar -->
+      <div class="container">
+        <section class="sub-header">
+          <h1>Contact Us</h1>
+        </section>
+
+        <!-- Contact Us -->
+
+        <div class="bg">
+          <section class="location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30154.333632829483!2d72.80480730668847!3d19.138704396878857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b618b6d891dd%3A0x91f8a857c731d132!2sAndheri%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1695268561134!5m2!1sen!2sin"
+              width="800"
+              height="500"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </section>
+
+          <section class="contact-us">
+            <div class="row">
+              <div class="contact-col">
+                <div>
+                  <i class="fa fa-home"></i>
+                  <span>
+                    <h5>Munshi Nagar, Andheri (West)</h5>
+                    <p>Mumbai, Maharashtra, India</p>
+                  </span>
+                </div>
+                <div>
+                  <i class="fa fa-phone"></i>
+                  <span>
+                    <h5>+91 9876543210</h5>
+                    <p>Monday to Saturday 10AM to 8PM</p>
+                  </span>
+                </div>
+                <div>
+                  <i class="fa fa-envelope-o"></i>
+                  <span>
+                    <h5>info@aroundtheworld.com</h5>
+                    <p>Email us your query</p>
+                  </span>
+                </div>
+              </div>
+              <div class="contact-col">
+                <br />
+                <h5>REACH OUT TO US</h5>
+                <br />
+                <form name="form1">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  /><span id="nvalidate" class="error"></span>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email address"
+                    required
+                  /><span id="evalidate" class="error"></span>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Enter your subject"
+                    required
+                  /><span id="svalidate" class="error"></span>
+                  <textarea
+                    rows="8"
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    required
+                  ></textarea
+                  ><span id="mvalidate" class="error"></span>
+                  <input
+                    class="hero-btn"
+                    type="button"
+                    value="SUBMIT MESSAGE"
+                    onclick="validate()"
+                  />
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Footer -->
+        <section class="footer">
+          <h2>Around The World</h2>
+          <p>Mumbai, India</p>
+          <br />
+
+          <div class="icons">
+            <p>Social Media Handles</p>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+        </section>
+        <!-- End of Footer -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Around The World</title>
+  </head>
+  <body>
+    <div class="outer-bg">
+      <!-- Navbar -->
+      <nav>
+        <a href=""><img src="images/logo4.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="1-Home.html">HOME</a></li>
+            <li><a href="2-About.html">ABOUT</a></li>
+            <li><a href="3-Plans.html">PLANS</a></li>
+            <li><a href="4-Contact.html">CONTACT</a></li>
+            <li><a href="5-Register.html">REGISTER/LOGIN</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <!-- End of Navbar -->
+      <div class="container">
+        <div class="bg">
+          <!-- REGISTER-LOGIN -->
+
+          <div class="form-container">
+            <div>
+              <center>
+                <button onclick="showRegisterForm()">Register</button>
+                <button onclick="showLoginForm()">Login</button>
+              </center>
+            </div>
+            <form id="loginForm" style="display: none">
+              <h2>Login</h2>
+              <label for="loginUsername">Username:</label>
+              <input
+                type="text"
+                id="loginUsername"
+                name="loginUsername"
+                required
+              />
+              <p id="loginUsernameValidate" class="error"></p>
+              <label for="loginPassword">Password:</label>
+              <input
+                type="password"
+                id="loginPassword"
+                name="loginPassword"
+                required
+              /><span id="loginPasswordValidate" class="error"></span><br />
+              <button type="button" onclick="validateLogin()">Login</button>
+            </form>
+
+            <form id="registerForm">
+              <h2>Register</h2>
+              <label for="registerUsername">Username:</label>
+              <input
+                type="text"
+                id="registerUsername"
+                name="registerUsername"
+                required
+              />
+              <p id="registerUsernameValidate" class="error"></p>
+              <label for="email">Email ID:</label>
+              <input type="email" id="email" name="email" required />
+              <p id="registerEmailValidate" class="error"></p>
+              <label for="registerPassword">Password:</label>
+              <input
+                type="password"
+                id="registerPassword"
+                name="registerPassword"
+                required
+              />
+              <p id="registerPasswordValidate" class="error"></p>
+              <label for="confirmPassword">Confirm Password:</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+              <p id="registerCPasswordValidate" class="error"></p>
+              <br />
+              <button type="button" onclick="validateRegistration()">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Footer -->
+        <section class="footer">
+          <h2>Around The World</h2>
+          <p>Mumbai, India</p>
+          <br />
+
+          <div class="icons">
+            <p>Social Media Handles</p>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+        </section>
+        <!-- End of Footer -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

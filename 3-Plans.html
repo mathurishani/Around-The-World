@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Around The World</title>
+  </head>
+  <body>
+    <div class="outer-bg">
+      <!-- Navbar -->
+      <nav>
+        <a href=""><img src="images/logo4.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="1-Home.html">HOME</a></li>
+            <li><a href="2-About.html">ABOUT</a></li>
+            <li><a href="3-Plans.html">PLANS</a></li>
+            <li><a href="4-Contact.html">CONTACT</a></li>
+            <li><a href="5-Register.html">REGISTER/LOGIN</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <!-- End of Navbar -->
+      <div class="container">
+        <section class="sub-header">
+          <h1>Plans Offered</h1>
+        </section>
+
+        <!-- Plans Offered -->
+
+        <section>
+          <div class="slider" onclick="cardClick(event)">
+            <div class="card" data-target-page="3.1-Offer.html">
+              <div class="img">
+                <img src="Images/australia/kangaroo-7423042_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href=""> Australia </a></div>
+                <div class="sub-title">Australia</div>
+                <p>Where Adventure Meets the Horizon</p>
+              </div>
+            </div>
+            <div class="card" data-target-page="3.2-Offer.html">
+              <div class="img">
+                <img src="Images/brazil/waterfalls-1417102_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href="">Brazil </a></div>
+                <div class="sub-title">South America</div>
+                <p>Samba Rhythms and Natural Wonders Await</p>
+              </div>
+            </div>
+            <div class="card" data-target-page="3.3-Offer.html">
+              <div class="img">
+                <img src="Images/uk/big-ben-2393098_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href=""> England </a></div>
+                <div class="sub-title">Europe</div>
+                <p>Timeless Traditions, Modern Marvels</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="slider" onclick="cardClick(event)">
+            <div class="card" data-target-page="3.4-Offer.html">
+              <div class="img">
+                <img src="Images/france/building-66789_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href=""> France </a></div>
+                <div class="sub-title">Europe</div>
+                <p>Romance, Culture, and Timeless Elegance</p>
+              </div>
+            </div>
+            <div class="card" data-target-page="3.5-Offer.html">
+              <div class="img">
+                <img src="Images/india/temple-3181803_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href="">India </a></div>
+                <div class="sub-title">Asia</div>
+                <p>A Tapestry of Cultures, Colors, and Contrasts</p>
+              </div>
+            </div>
+            <div class="card" data-target-page="">
+              <div class="img">
+                <img src="Images/place/village-279013_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href=""> Italy </a></div>
+                <div class="sub-title">Europe</div>
+                <p>A Symphony of Art, History, and Gastronomy</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="slider" onclick="cardClick(event)">
+            <div class="card" data-target-page="">
+              <div class="img">
+                <img src="Images/place/singapore-243669_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href=""> Singapore </a></div>
+                <div class="sub-title">Asia</div>
+                <p>Where Tradition and Innovation Converge</p>
+              </div>
+            </div>
+            <div class="card" data-target-page="">
+              <div class="img">
+                <img src="Images/place/suspension-bridge-959853_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title"><a href="">Thailand </a></div>
+                <div class="sub-title">Asia</div>
+                <p>The Land of Smiles and Serenity</p>
+              </div>
+            </div>
+            <div class="card" data-target-page="">
+              <div class="img">
+                <img src="Images/place/pedestrians-1853552_1280.jpg" />
+              </div>
+              <div class="content">
+                <div class="title">
+                  <a href=""> United States of America </a>
+                </div>
+                <div class="sub-title">North America</div>
+                <p>From Coast to Coast, a Journey of Diversity</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+          <h2>Around The World</h2>
+          <p>Mumbai, India</p>
+          <br />
+
+          <div class="icons">
+            <p>Social Media Handles</p>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div>
+        </section>
+        <!-- End of Footer -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
