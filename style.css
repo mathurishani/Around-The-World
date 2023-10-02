@@ -44,7 +44,6 @@ html {
     url("images/skyBg.jpg");
   background-position: center;
   background-size: cover;
-  /* position: relative; */
 }
 
 /* Navbar */
@@ -98,10 +97,7 @@ nav .fa {
 }
 
 @media (max-width: 700px) {
-  /* .text-box h1{
-      font-size: 20px;
-  } */
-  .nav-links ul li {
+   .nav-links ul li {
     display: block;
   }
   .nav-links {
@@ -160,24 +156,6 @@ nav .fa {
   margin: auto;
 }
 
-@keyframes drop-letters {
-  0% {
-    transform: translateY(0);
-  }
-  10% {
-    transform: translateY(0);
-  }
-  15% {
-    transform: translateY(-100%);
-  }
-  20% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .header-image {
   width: 35%;
   animation: image-float 150s infinite;
@@ -228,9 +206,6 @@ nav .fa {
 }
 
 .row {
-  /* margin-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%; */
   margin: 5%;
   display: flex;
   justify-content: space-between;
@@ -288,6 +263,13 @@ h3 {
 .layer:hover h3 {
   bottom: 49%;
   opacity: 1;
+}
+
+
+@media(max-width: 700px){
+  .row{
+      flex-direction: column;
+  }
 }
 
 /* End of Popular tours */
@@ -398,21 +380,10 @@ h3 {
   transition: 1s;
 }
 
-@keyframes contact-bg {
-  0% {
-    background-color: #3d3d3d;
-  }
-  25% {
-    background-color: #ced8e4;
-  }
-  50% {
-    background-color: #1e81f3;
-  }
-  75% {
-    background-color: #ff7842;
-  }
-  100% {
-    background-color: #3d3d3d;
+@media(max-width: 700px){
+  .contact h1{
+      font-size: 24px;
+      text-align: center;
   }
 }
 /* End of Contact */
@@ -427,10 +398,6 @@ h3 {
   font-size: 15px;
 }
 
-.footer h2 {
-  /* margin-top: 20px; */
-}
-
 .icons .fa {
   color: white;
   margin: 0 13px;
@@ -441,11 +408,7 @@ h3 {
 /* End of Footer */
 
 @media (max-width: 1200px) {
-  .cards-wrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-
+ 
   .card {
     margin: 3rem 0;
   }
@@ -456,13 +419,6 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-  .nav-list {
-    flex-direction: column;
-  }
-
-  .nav-link {
-    flex-grow: 1;
-  }
 
   .header-text {
     position: absolute;
@@ -532,19 +488,7 @@ h3 {
     margin: 0;
   }
 
-  .open-navbar-icon {
-    top: 2.5rem;
-    left: 2.5rem;
-  }
-
-  .navbar-wrapper {
-    padding: 0;
-  }
-
-  .close-navbar-icon {
-    right: 4rem;
-  }
-
+ 
   .header {
     height: 100vh;
   }
@@ -565,7 +509,8 @@ h3 {
   }
 }
 
-/* SUB HEader */
+
+/* Sub Header */
 .sub-header {
   height: 50vh;
   width: 100%;
@@ -580,6 +525,12 @@ h3 {
 .sub-header h1 {
   padding: 120px;
   font-size: 80px;
+}
+
+@media(max-width: 700px){
+  .sub-header h1{
+      font-size: 40px;
+  }
 }
 
 .about-us {
@@ -660,10 +611,12 @@ h3 {
   .slider {
     flex-wrap: wrap;
     flex-direction: column;
+    margin: 10px;
   }
   .card {
+    padding: 10px;
     max-width: 700px;
-    margin: 20px 0;
+    margin: 40px;
   }
 }
 .rating .fa {
@@ -797,8 +750,8 @@ button:hover {
   background-color: #dac0a3;
 }
 
-/* .error {
-  color: red;
-  
-  margin-top: 1px;
-} */
+@media(max-width: 700px){
+  .form-container{
+      max-width: 400px;
+  }
+}
